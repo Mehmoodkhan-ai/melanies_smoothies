@@ -8,8 +8,6 @@ st.write("""Choose the fruits you want  in your custom Smoothie!.""")
 Name_on_order = st.text_input("Name on smoothie:")
 st.write("The name on your smoothie will be:", Name_on_order)
 
-from snowflake.snowpark.functions import col
-session = get_active_session()
 cnx =st.connection("snowflake")
 session=cnx.session()
 
